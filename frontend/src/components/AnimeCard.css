@@ -1,0 +1,117 @@
+.anime-card {
+  background-color: #111111;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.anime-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(204, 0, 0, 0.3);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(204, 0, 0, 0.06);
+}
+
+.anime-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.anime-card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(transparent, #111111);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.anime-card-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(204, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.anime-card:hover .anime-card-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.anime-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.anime-card:hover .anime-card-image img {
+  transform: scale(1.1);
+}
+
+.anime-card-info {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.anime-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.anime-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anime-card-score {
+  background-color: rgba(204, 0, 0, 0.15);
+  color: #ff4444;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(204, 0, 0, 0.2);
+}
+
+.anime-card-type {
+  color: #555555;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

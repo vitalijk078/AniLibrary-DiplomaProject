@@ -1,58 +1,70 @@
-# AnimeHub
+# Getting Started with Create React App
 
-Веб-приложение для поиска, просмотра и сохранения информации об аниме.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Стек
+## Available Scripts
 
-- React
-- TypeScript
-- Vite
-- React Router
-- TanStack Query
-- Express proxy
-- Shikimori API
-- localStorage для избранного
+In the project directory, you can run:
 
-## Возможности
+### `npm start`
 
-- Главная страница с подборками аниме.
-- Поиск в шапке сайта и на главной странице.
-- Горизонтальная прокручиваемая лента с аниме на главной странице.
-- Каталог с поиском, фильтрами, сортировкой и пагинацией.
-- Загрузка жанров из API.
-- Страница подробной информации об аниме.
-- Русские названия и описания, если они есть в источнике.
-- Сохранение тайтлов в избранное.
-- Обработка загрузки, ошибок и пустых результатов.
-- Адаптивная верстка для ПК, планшетов и смартфонов.
-- Футер с навигацией и подборками.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Запуск
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```bash
-npm install
-npm run dev
-```
+### `npm test`
 
-Команда `npm run dev` запускает одновременно:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- frontend на Vite;
-- локальный proxy-сервер на Express.
+### `npm run build`
 
-Frontend обращается к `/api`, а proxy-сервер перенаправляет запросы к внешнему источнику данных.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Отдельный запуск
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```bash
-npm run server
-npm run dev:frontend
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Сборка и production-запуск
+### `npm run eject`
 
-```bash
-npm run build
-npm start
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-После сборки Express-сервер отдаёт статические файлы из папки `dist` и продолжает работать как proxy для `/api`.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
